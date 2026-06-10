@@ -1,0 +1,226 @@
+.page{
+  padding:30px;
+  min-height:100vh;
+}
+
+.carousel-img{
+  height:500px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.hero-art{
+  text-align:center;
+  background:rgba(255,255,255,.85);
+  padding:30px;
+  border-radius:15px;
+  margin:30px auto;
+  max-width:900px;
+}
+
+.hero-art h1{
+  font-size:4rem;
+  color:#6b1fa1;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:rgba(255,255,255,.9);
+  border:2px solid #c98b00;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.card img{
+  height:350px;
+  object-fit:cover;
+}
+
+
+.carousel-img{
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.carousel{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title{
+  color: #5c4033;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.page{
+  padding: 30px;
+}
+
+.card{
+  transition: all 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-8px);
+}
+/* HERO GALERIA */
+.hero-galeria{
+    padding: 80px 20px;
+    text-align:center;
+    color:white;
+
+    background: linear-gradient(
+        135deg,
+        rgba(92,64,51,0.9),
+        rgba(139,94,60,0.8)
+    );
+
+    border-radius:20px;
+    margin-bottom:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+/* TITULO MUSA */
+.musa-title{
+    font-size:5rem;
+    font-weight:900;
+    letter-spacing:8px;
+
+    background: linear-gradient(
+        90deg,
+        #ff2f00,
+        #ca940d,
+        #d70a0a
+    );
+    text-shadow:
+      0 0 10px rgba(26, 24, 13, 0.5),
+      0 0 20px rgba(32, 30, 24, 0.3);
+
+    margin-bottom:5px;
+}
+
+/* SUBTITULO */
+.galeria-subtitle{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+/* TEXTO */
+.hero-text{
+    max-width:800px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+/* BOTONES */
+.hero-buttons{
+    margin-top:30px;
+}
+
+/* ESTADISTICAS */
+.stat-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+
+    box-shadow:
+      0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card h2{
+    color:#8b5e3c;
+    font-weight:900;
+    font-size:3rem;
+}
+
+.stat-card p{
+    color:#666;
+    margin:0;
+}
+/* ==========================
+   CONTACTO
+========================== */
+
+.contacto-page{
+    min-height:100vh;
+    background:
+      linear-gradient(
+      rgba(20,20,20,.75),
+      rgba(20,20,20,.75)),
+      url("/fondo-arte.jpg");
+
+    background-size:cover;
+    background-position:center;
+    padding-bottom:50px;
+}
+
+.contacto-hero{
+    padding:70px 20px 40px;
+}
+
+.contacto-title{
+    font-size:4rem;
+    font-weight:800;
+    color:#ffd166;
+    text-shadow:0 0 20px rgba(255,209,102,.6);
+}
+
+.contacto-subtitle{
+    color:white;
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
+}
+
+.contacto-card{
+    border-radius:25px;
+    background:rgba(255,255,255,.95);
+}
+
+.contacto-info{
+    border-radius:25px;
+    background:linear-gradient(
+      135deg,
+      #5c4033,
+      #8b5e3c
+    );
+
+    color:white;
+}
+
+.contacto-info h3,
+.contacto-info h5{
+    color:#ffd166;
+}
+
+.contacto-info hr{
+    border-color:rgba(255,255,255,.3);
+}
+
+.contacto-info p{
+    font-size:1rem;
+}
+
+.form-control{
+    border-radius:12px;
+}
+
+.form-control:focus{
+    box-shadow:0 0 10px rgba(255,209,102,.5);
+    border-color:#ffd166;
+}
