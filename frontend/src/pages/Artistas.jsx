@@ -19,11 +19,13 @@ function Artistas() {
   const [nombre, setNombre] = useState("");
   const [nacionalidad, setNacionalidad] = useState("");
   const [biografia, setBiografia] = useState("");
+  const [foto, setFoto] = useState("");
 
   const [editId, setEditId] = useState(null);
   const [editNombre, setEditNombre] = useState("");
   const [editNacionalidad, setEditNacionalidad] = useState("");
   const [editBiografia, setEditBiografia] = useState("");
+  const [editFoto, setEditFoto] = useState("");
 
   const [mostrarModal, setMostrarModal] = useState(false);
 
@@ -68,12 +70,14 @@ function Artistas() {
     await crearArtista({
       nombre,
       nacionalidad,
-      biografia
+      biografia,
+      foto
     });
 
     setNombre("");
     setNacionalidad("");
     setBiografia("");
+    setFoto("");
 
     cargarArtistas();
   };
@@ -87,17 +91,19 @@ function Artistas() {
     setEditNombre(artista.nombre);
     setEditNacionalidad(artista.nacionalidad || "");
     setEditBiografia(artista.biografia || "");
+    setEditFoto(artista.foto || "");
     setMostrarModal(true);
   };
   const guardarEdicion = async () => {
     if (!editNombre) return alert("Nombre requerido");
 
     try {
-      await actualizarArtista(editId, {
-        nombre: editNombre,
-        nacionalidad: editNacionalidad,
-        biografia: editBiografia
-      });
+     await actualizarArtista(editId, {
+      nombre: editNombre,
+      nacionalidad: editNacionalidad,
+      biografia: editBiografia,
+      foto: editFoto
+    });
 
       setMostrarModal(false);
       cargarArtistas();
@@ -202,6 +208,13 @@ function Artistas() {
           onChange={(e) => setBiografia(e.target.value)}
           className="form-control w-50 mx-auto mt-2"
         />
+        <input
+        type="text"
+        placeholder="Foto"
+        value={foto}
+        onChange={(e) => setFoto(e.target.value)}
+        className="form-control w-50 mx-auto mt-2"
+      />
 
         {esAdmin && (
           <button className="btn btn-success mt-3" onClick={agregarArtista}>
@@ -302,6 +315,13 @@ function Artistas() {
               onChange={(e) => setEditBiografia(e.target.value)}
               className="form-control mt-2"
               placeholder="Biografía"
+            />
+            <input
+              type="text"
+              value={editFoto}
+              onChange={(e) => setEditFoto(e.target.value)}
+              className="form-control mt-2"
+              placeholder="Foto"
             />
 
             <div className="mt-3">
