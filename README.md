@@ -1,4 +1,8 @@
 MUSA - Galería de Arte Digital
+Integrante
+Limachi Quispe Manuel Alejandro 
+Descripción
+MUSA es una aplicación web desarrollada para la administración de artistas, obras de arte y usuarios mediante una arquitectura Frontend-Backend.
 
 Proyecto desarrollado para la materia Web III.
 
@@ -19,6 +23,3 @@ Proyecto desarrollado para la materia Web III.
 - Reporte PDF
 - Gráficos estadísticos
 - Gestión de usuarios
-
-AUTOR
-manuel Alejandro Limachi quispe
